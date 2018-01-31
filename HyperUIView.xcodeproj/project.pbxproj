@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		930240B72021E0750046E4EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930240B52021E0750046E4EA /* Main.storyboard */; };
+		930240B92021E0750046E4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930240B82021E0750046E4EA /* Assets.xcassets */; };
+		930240BC2021E0750046E4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930240BA2021E0750046E4EA /* LaunchScreen.storyboard */; };
+		930240C72021E0750046E4EA /* HyperUIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930240C62021E0750046E4EA /* HyperUIViewTests.swift */; };
+		930240D22021E0750046E4EA /* HyperUIViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930240D12021E0750046E4EA /* HyperUIViewUITests.swift */; };
+		930240E32021E0A80046E4EA /* hyperapp.js in Resources */ = {isa = PBXBuildFile; fileRef = 930240DF2021E0A70046E4EA /* hyperapp.js */; };
+		930240E42021E0A80046E4EA /* Layouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930240E02021E0A80046E4EA /* Layouts.swift */; };
+		930240E52021E0A80046E4EA /* HyperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930240E12021E0A80046E4EA /* HyperApp.swift */; };
+		930240E62021E0A80046E4EA /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930240E22021E0A80046E4EA /* ActionButton.swift */; };
+		930240ED2021E0EA0046E4EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930240EB2021E0EA0046E4EA /* ViewController.swift */; };
+		930240EE2021E0EA0046E4EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930240EC2021E0EA0046E4EA /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		930240C32021E0750046E4EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 930240A62021E0750046E4EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 930240AD2021E0750046E4EA;
+			remoteInfo = HyperUIView;
+		};
+		930240CE2021E0750046E4EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 930240A62021E0750046E4EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 930240AD2021E0750046E4EA;
+			remoteInfo = HyperUIView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		930240AE2021E0750046E4EA /* HyperUIView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HyperUIView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		930240B62021E0750046E4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		930240B82021E0750046E4EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		930240BB2021E0750046E4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		930240BD2021E0750046E4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		930240C22021E0750046E4EA /* HyperUIViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HyperUIViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		930240C62021E0750046E4EA /* HyperUIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperUIViewTests.swift; sourceTree = "<group>"; };
+		930240C82021E0750046E4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		930240CD2021E0750046E4EA /* HyperUIViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HyperUIViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		930240D12021E0750046E4EA /* HyperUIViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyperUIViewUITests.swift; sourceTree = "<group>"; };
+		930240D32021E0750046E4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		930240DF2021E0A70046E4EA /* hyperapp.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hyperapp.js; sourceTree = "<group>"; };
+		930240E02021E0A80046E4EA /* Layouts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layouts.swift; sourceTree = "<group>"; };
+		930240E12021E0A80046E4EA /* HyperApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HyperApp.swift; sourceTree = "<group>"; };
+		930240E22021E0A80046E4EA /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		930240EB2021E0EA0046E4EA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		930240EC2021E0EA0046E4EA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		930240AB2021E0750046E4EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930240BF2021E0750046E4EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930240CA2021E0750046E4EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		930240A52021E0750046E4EA = {
+			isa = PBXGroup;
+			children = (
+				930240B02021E0750046E4EA /* HyperUIView */,
+				930240C52021E0750046E4EA /* HyperUIViewTests */,
+				930240D02021E0750046E4EA /* HyperUIViewUITests */,
+				930240AF2021E0750046E4EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		930240AF2021E0750046E4EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				930240AE2021E0750046E4EA /* HyperUIView.app */,
+				930240C22021E0750046E4EA /* HyperUIViewTests.xctest */,
+				930240CD2021E0750046E4EA /* HyperUIViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		930240B02021E0750046E4EA /* HyperUIView */ = {
+			isa = PBXGroup;
+			children = (
+				930240E22021E0A80046E4EA /* ActionButton.swift */,
+				930240EC2021E0EA0046E4EA /* AppDelegate.swift */,
+				930240E12021E0A80046E4EA /* HyperApp.swift */,
+				930240E02021E0A80046E4EA /* Layouts.swift */,
+				930240EB2021E0EA0046E4EA /* ViewController.swift */,
+				930240B52021E0750046E4EA /* Main.storyboard */,
+				930240DF2021E0A70046E4EA /* hyperapp.js */,
+				930240B82021E0750046E4EA /* Assets.xcassets */,
+				930240BA2021E0750046E4EA /* LaunchScreen.storyboard */,
+				930240BD2021E0750046E4EA /* Info.plist */,
+			);
+			path = HyperUIView;
+			sourceTree = "<group>";
+		};
+		930240C52021E0750046E4EA /* HyperUIViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				930240C62021E0750046E4EA /* HyperUIViewTests.swift */,
+				930240C82021E0750046E4EA /* Info.plist */,
+			);
+			path = HyperUIViewTests;
+			sourceTree = "<group>";
+		};
+		930240D02021E0750046E4EA /* HyperUIViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				930240D12021E0750046E4EA /* HyperUIViewUITests.swift */,
+				930240D32021E0750046E4EA /* Info.plist */,
+			);
+			path = HyperUIViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		930240AD2021E0750046E4EA /* HyperUIView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 930240D62021E0750046E4EA /* Build configuration list for PBXNativeTarget "HyperUIView" */;
+			buildPhases = (
+				930240AA2021E0750046E4EA /* Sources */,
+				930240AB2021E0750046E4EA /* Frameworks */,
+				930240AC2021E0750046E4EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HyperUIView;
+			productName = HyperUIView;
+			productReference = 930240AE2021E0750046E4EA /* HyperUIView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		930240C12021E0750046E4EA /* HyperUIViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 930240D92021E0750046E4EA /* Build configuration list for PBXNativeTarget "HyperUIViewTests" */;
+			buildPhases = (
+				930240BE2021E0750046E4EA /* Sources */,
+				930240BF2021E0750046E4EA /* Frameworks */,
+				930240C02021E0750046E4EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				930240C42021E0750046E4EA /* PBXTargetDependency */,
+			);
+			name = HyperUIViewTests;
+			productName = HyperUIViewTests;
+			productReference = 930240C22021E0750046E4EA /* HyperUIViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		930240CC2021E0750046E4EA /* HyperUIViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 930240DC2021E0750046E4EA /* Build configuration list for PBXNativeTarget "HyperUIViewUITests" */;
+			buildPhases = (
+				930240C92021E0750046E4EA /* Sources */,
+				930240CA2021E0750046E4EA /* Frameworks */,
+				930240CB2021E0750046E4EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				930240CF2021E0750046E4EA /* PBXTargetDependency */,
+			);
+			name = HyperUIViewUITests;
+			productName = HyperUIViewUITests;
+			productReference = 930240CD2021E0750046E4EA /* HyperUIViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		930240A62021E0750046E4EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "I.C.N.H GmbH";
+				TargetAttributes = {
+					930240AD2021E0750046E4EA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					930240C12021E0750046E4EA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 930240AD2021E0750046E4EA;
+					};
+					930240CC2021E0750046E4EA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 930240AD2021E0750046E4EA;
+					};
+				};
+			};
+			buildConfigurationList = 930240A92021E0750046E4EA /* Build configuration list for PBXProject "HyperUIView" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 930240A52021E0750046E4EA;
+			productRefGroup = 930240AF2021E0750046E4EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				930240AD2021E0750046E4EA /* HyperUIView */,
+				930240C12021E0750046E4EA /* HyperUIViewTests */,
+				930240CC2021E0750046E4EA /* HyperUIViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		930240AC2021E0750046E4EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930240BC2021E0750046E4EA /* LaunchScreen.storyboard in Resources */,
+				930240B92021E0750046E4EA /* Assets.xcassets in Resources */,
+				930240B72021E0750046E4EA /* Main.storyboard in Resources */,
+				930240E32021E0A80046E4EA /* hyperapp.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930240C02021E0750046E4EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930240CB2021E0750046E4EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		930240AA2021E0750046E4EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930240E42021E0A80046E4EA /* Layouts.swift in Sources */,
+				930240E52021E0A80046E4EA /* HyperApp.swift in Sources */,
+				930240ED2021E0EA0046E4EA /* ViewController.swift in Sources */,
+				930240EE2021E0EA0046E4EA /* AppDelegate.swift in Sources */,
+				930240E62021E0A80046E4EA /* ActionButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930240BE2021E0750046E4EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930240C72021E0750046E4EA /* HyperUIViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930240C92021E0750046E4EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				930240D22021E0750046E4EA /* HyperUIViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		930240C42021E0750046E4EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 930240AD2021E0750046E4EA /* HyperUIView */;
+			targetProxy = 930240C32021E0750046E4EA /* PBXContainerItemProxy */;
+		};
+		930240CF2021E0750046E4EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 930240AD2021E0750046E4EA /* HyperUIView */;
+			targetProxy = 930240CE2021E0750046E4EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		930240B52021E0750046E4EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				930240B62021E0750046E4EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		930240BA2021E0750046E4EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				930240BB2021E0750046E4EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		930240D42021E0750046E4EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		930240D52021E0750046E4EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		930240D72021E0750046E4EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LB6LGHFS2F;
+				INFOPLIST_FILE = HyperUIView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.icnh.HyperUIView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		930240D82021E0750046E4EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LB6LGHFS2F;
+				INFOPLIST_FILE = HyperUIView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.icnh.HyperUIView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		930240DA2021E0750046E4EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LB6LGHFS2F;
+				INFOPLIST_FILE = HyperUIViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.icnh.HyperUIViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HyperUIView.app/HyperUIView";
+			};
+			name = Debug;
+		};
+		930240DB2021E0750046E4EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LB6LGHFS2F;
+				INFOPLIST_FILE = HyperUIViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.icnh.HyperUIViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HyperUIView.app/HyperUIView";
+			};
+			name = Release;
+		};
+		930240DD2021E0750046E4EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LB6LGHFS2F;
+				INFOPLIST_FILE = HyperUIViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.icnh.HyperUIViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HyperUIView;
+			};
+			name = Debug;
+		};
+		930240DE2021E0750046E4EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LB6LGHFS2F;
+				INFOPLIST_FILE = HyperUIViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.icnh.HyperUIViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HyperUIView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		930240A92021E0750046E4EA /* Build configuration list for PBXProject "HyperUIView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				930240D42021E0750046E4EA /* Debug */,
+				930240D52021E0750046E4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		930240D62021E0750046E4EA /* Build configuration list for PBXNativeTarget "HyperUIView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				930240D72021E0750046E4EA /* Debug */,
+				930240D82021E0750046E4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		930240D92021E0750046E4EA /* Build configuration list for PBXNativeTarget "HyperUIViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				930240DA2021E0750046E4EA /* Debug */,
+				930240DB2021E0750046E4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		930240DC2021E0750046E4EA /* Build configuration list for PBXNativeTarget "HyperUIViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				930240DD2021E0750046E4EA /* Debug */,
+				930240DE2021E0750046E4EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 930240A62021E0750046E4EA /* Project object */;
+}
