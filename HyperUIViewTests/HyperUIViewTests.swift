@@ -32,7 +32,7 @@ class HyperUIViewTests: XCTestCase {
         let e = XCTestExpectation()
         DispatchQueue.main.async {
             XCTAssertFalse(v.subviews.isEmpty)
-            XCTAssertEqual((v.subviews[0].subviews[0] as! UILabel).text, "23")
+            XCTAssertEqual((v.subviews[0].subviews[0] as! UILabel).text, "42")
             e.fulfill()
         }
         wait(for: [e], timeout: 1)

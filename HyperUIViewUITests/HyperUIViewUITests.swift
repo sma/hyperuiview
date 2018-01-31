@@ -32,7 +32,7 @@ class HyperUIViewUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testApp() {
         let app = XCUIApplication()
         // given
         XCTAssert(app.staticTexts["0"].exists)
@@ -49,7 +49,7 @@ class HyperUIViewUITests: XCTestCase {
         
         // and when
         app.buttons["-"].tap()
-        app.buttons["+"].tap()
+        app.buttons["-"].tap()
         
         // then
         XCTAssert(app.staticTexts["0"].exists)
