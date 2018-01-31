@@ -2,9 +2,22 @@
 
 import UIKit
 
+extension CGRect {
+    func insetBy(_ insets: UIEdgeInsets) -> CGRect {
+        var rect = self
+        rect.origin.x += insets.left
+        rect.origin.y += insets.top
+        rect.size.width -= insets.left + insets.right
+        rect.size.height -= insets.top + insets.bottom
+        return rect
+    }
+}
+
 class FrameLayout: UIView {
+    var insets: UIEdgeInsets = .zero
+
     override func layoutSubviews() {
-        let frame = bounds
+        let frame = bounds.insetBy(insets)
         for subview in subviews {
             subview.frame = frame
         }
