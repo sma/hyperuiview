@@ -15,6 +15,18 @@ extension CGRect {
 
 class FrameLayout: UIView {
     var insets: UIEdgeInsets = .zero
+    
+    override func sizeThatFits(_ size: CGSize) -> CGSize {
+        var result = CGSize.zero
+        for subview in subviews {
+            let sz = subview.sizeThatFits(size)
+            result.width = max(result.width, sz.width)
+            result.height = max(result.height, sz.height)
+        }
+        result.width += insets.left + insets.right
+        result.height += insets.top + insets.bottom
+        return result
+    }
 
     override func layoutSubviews() {
         let frame = bounds.insetBy(insets)

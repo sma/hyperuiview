@@ -39,4 +39,18 @@ class LayoutsTests: XCTestCase {
             XCTAssertEqual(subview.frame, CGRect(x: 2, y: 1, width: 6, height: 9))
         }
     }
+    
+    func testFrameLayoutSizeThatFits() {
+        // given
+        let frameLayout = FrameLayout()
+        frameLayout.insets = UIEdgeInsets(top: 1, left: 2, bottom: 3, right: 4)
+        frameLayout.addSubview(UIView(frame: CGRect(x: 0, y: 0, width: 3, height: 30)))
+        frameLayout.addSubview(UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 4)))
+        
+        // when
+        let size = frameLayout.sizeThatFits(.zero)
+        
+        // then
+        XCTAssertEqual(size, CGSize(width: 46, height: 34))
+    }
 }
