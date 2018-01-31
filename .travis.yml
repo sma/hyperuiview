@@ -1,4 +1,9 @@
 language: objective-c
 osx_image: xcode9.2
 script:
-  - xcodebuild test -project HyperUIView.xcodeproj -scheme HyperUIView -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.2' -destination 'platform=iOS Simulator,name=iPad Air,OS=11.2' | xcpretty && exit ${PIPESTATUS[0]}
+- xcodebuild test -project HyperUIView.xcodeproj -scheme HyperUIView -sdk iphonesimulator
+  -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.2' -destination 'platform=iOS
+  Simulator,name=iPad Air,OS=11.2' | xcpretty && exit ${PIPESTATUS[0]}
+notifications:
+  slack:
+    secure: vMTwVNtBDS6/ULLkOL2EjSRt+dnwDJYJGuaQoeWFfkfO++72i0eFbxl4lLaSzyLSTm2DV7zDPpHKViFBGmUuSOQugknHcDqZscOhPk35cj90U9B/n3sUG+tUt8jAa/foiv/RDGc+KX8Nn76KkCOdciPZcBeQCpLUx20wfVRVTl6kbPnCI+66D+ruJVtX9d4bfEw4ri1bzbYoYXpIcjY/bt8uWpt6OOYbKTC7gD4OXTw4CRvjGggZyoYW2KwDqjah1DxQaV/acGv1sJyhNacIhc5b6xjlOwrvQ5mUAeBkAdo5NC59SRL9i+RpsAbAQfTqpbE61qPtQcJm84ArkX28obuJyHMEl00xbfEG0gqATu+24eDkMyydyU5iO+h2K6h+iGKP15RT6M1RY9wqexzjuH5xkYzfkuV0P0gwBhBPeMDY9fsegfO8cQBfg42+pTz5COXEruH4PAXajcoO11JVRUhMIY3XEhbQWjMBXJjyrsafp2FGzWWiME6uscd2rYIvfHuvpIcD1ZQuZjuv8aUIPHf72tGqlAV/7tZbcm+NScbgw4FXR6al9j4joXuLYWCtnP8bIvn9z3DXnzGFv0nWUZ8JdmCA2oP4kE2M2cMWC9zySG2574BXbhMTxgGzaiMYr06ZoEt8CrcYaMV0kY1BkXuhrNEAEg37f/2tGujP+94=
