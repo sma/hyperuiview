@@ -1,4 +1,4 @@
 language: objective-c
 osx_image: xcode9.2
 script:
-  - xcodebuild test -project HyperUIView.xcodeproj -scheme HyperUIView -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.2' | xcpretty && exit ${PIPESTATUS[0]}
+  - xcodebuild test -project HyperUIView.xcodeproj -scheme HyperUIView -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone SE,OS=11.2' -destination 'platform=iOS Simulator,name=iPad Air,OS=11.2' | xcpretty && exit ${PIPESTATUS[0]}

@@ -8,6 +8,10 @@
 
 import XCTest
 
+extension XCUIElement {
+    var existsNot: Bool { return !exists }
+}
+
 class HyperUIViewUITests: XCTestCase {
         
     override func setUp() {
@@ -29,8 +33,26 @@ class HyperUIViewUITests: XCTestCase {
     }
     
     func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let app = XCUIApplication()
+        // given
+        XCTAssert(app.staticTexts["0"].exists)
+        XCTAssert(app.buttons["-"].existsNot)
+        XCTAssert(app.buttons["+"].exists)
+
+        // when
+        app.buttons["+"].tap()
+        app.buttons["+"].tap()
+        
+        // then
+        XCTAssert(app.buttons["-"].exists)
+        XCTAssert(app.staticTexts["2"].exists)
+        
+        // and when
+        app.buttons["-"].tap()
+        app.buttons["-"].tap()
+        
+        // then
+        XCTAssert(app.staticTexts["0"].exists)
+        XCTAssert(app.buttons["-"].existsNot)
     }
-    
 }
